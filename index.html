@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <h1> Hello World! </h1>
-    <script src="script.js"></script>
-  </body>
-</html>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-size: cover;
+      color: grey;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      max-width: 200px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 50px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {  
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      p{
+        color: white;
+      }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t1.15752-9/275419558_481093183660164_6882219536059038089_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=721ajcpQi-cAX_vHaQI&_nc_ht=scontent-lga3-2.xx&oh=03_AVKeK_COoriINO5J4Tx558ch5-LHn9R0TNUUSKgM0QDCKw&oe=62548C8C">
+    <h1>Kenneth's Reviews</h1>
+    <ul>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+  </header>
+  
+  <article>
+    <h2>Interstellar - 9/10</h2>
+    <p>The space voyage is easily one of Nolan's most thought-provoking films yet. It's definitely his most ambitious.</p>
+    <button>Like</button>
+  </article>
+  
+  
+  <article>
+    <h2>The Godfather - 10/10</h2>
+    <p>First of all this movie is not for everyone and people who are looking for a family drama and comedy. It's about Mafia Gangsters and mobs and it is placed in 1950s, so don't watch this movie it you are not interested in such genres or else you would dislike this movie and call it overrated for no reason.</p>
+    <button>Like</button>
+  </article>
+  
+  
+  <article>
+    <h2>Pulp Fiction: 10/10</h2>
+    <p>A masterpiece with all emotions - drama, thrill, comedy, crime, suspense, action, you name it. The story is amazing and insanely intricate, and the characters are deeply described as never done before. The greatness of this film cannot be summed up in any way except: this may very well be the greatest movie of all time.</p>
+    <button>Like</button>
+  </article>
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
